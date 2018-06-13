@@ -14,3 +14,6 @@ def area(request):
 
 def water(request):
 	return render(request, 'mainapp/water.html', {})
+
+def watermap(request):
+	return render(request, 'mainapp/watermap.html', {})
