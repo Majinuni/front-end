@@ -8,6 +8,8 @@ urlpatterns = [
 	url(r'^area/$', area, name='area'),
 	url(r'^water/$', water, name='water'),
 	url(r'^watermap/$', watermap, name='watermap'),
+	url(r'^predictor/$', predictor, name='predictor'),
+
 	
 
 

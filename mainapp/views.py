@@ -17,3 +17,6 @@ def water(request):
 
 def watermap(request):
 	return render(request, 'mainapp/watermap.html', {})
+
+def predictor(request):
+	return render(request, 'mainapp/predictor.html', {})
