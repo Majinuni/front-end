@@ -124,18 +124,7 @@
                                         <span class="sidebar-normal"> Icons </span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="./components/typography.html">
-                                        <span class="sidebar-mini"> T </span>
-                                        <span class="sidebar-normal"> Typography </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./components/typography.html">
-                                        <span class="sidebar-mini"> T </span>
-                                        <span class="sidebar-normal"> Water points  </span>
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </li>
@@ -307,21 +296,34 @@
 </script>
 
 <script>
-    var cupcakeTiles = L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
-        maxZoom: 18
-      });
-    
-      $.getJSON("http://lyzidiamond.com/cupcakes/cupcakes.json", function(data) {
-        var geojson = L.geoJson(data, {
-          onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.name);
-          }
-        });
-        var map = L.map('reservoir-map').fitBounds(geojson.getBounds()).setView([2.32839, 37.98986], 13);
-        cupcakeTiles.addTo(map);
-        geojson.addTo(map);
-      });
-    
+
+	var planes = [
+		["<b>Borehole</b> Kubi Qallo",2.37205, 38.15460000000002],
+		["<b></b><br>",2.21325, 38.30033333333333,
+		["7C6CA1",-41.49413,173.5421],
+		["7C6CA2",-40.98585,174.50659],
+		["C81D9D",-40.93163,173.81726],
+		["C82009",-41.5183,174.78081],
+		["C82081",-41.42079,173.5783],
+		["C820AB",-42.08414,173.96632],
+		["C820B6",-41.51285,173.53274]
+		];
+
+        var map = L.map('map').setView([2.32839, 37.98986], 11);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+            maxZoom: 18,
+            }).addTo(map);
+
+		for (var i = 0; i < planes.length; i++) {
+			marker = new L.marker([planes[i][1],planes[i][2]])
+				.bindPopup(planes[i][0])
+				.addTo(map);
+		}
+               
     </script>
 <script>
     $.getJSON('/static/JsonData/reports.json', function(result) {
@@ -402,7 +404,33 @@
             {
               label: "Supply",
               backgroundColor: "#3e95cd",
-              data: [133,221,783,2478]
+              data: [133,221,783,247]
+            }, {
+              label: "Demand",
+              backgroundColor: "#8e5ea2",
+              data: [408,547,675,734]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Supply vs Demand (m3)'
+          }
+        }
+    });
+</script>
+<!-- Supply Demand Graph Projection -->
+<script>
+    new Chart(document.getElementById("supplyDemandProjection"), {
+        type: 'bar',
+        data: {
+          labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+          datasets: [
+            {
+              label: "Supply",
+              backgroundColor: "#3e95cd",
+              data: [133,221,783,247]
             }, {
               label: "Demand",
               backgroundColor: "#8e5ea2",

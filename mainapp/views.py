@@ -2,10 +2,6 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import json
 
-data = None
-with open("waterPoints.json") as file:
-	data = json.load(file)
-
 
 # Create your views here.
 def home(request):
@@ -26,6 +22,9 @@ def watermap(request):
 
 def dashboard(request):
     	return render(request, 'mainapp/reports.html', {})
+
+def reportsTwo(request):
+    	return render(request,'mainapp/reportsTwo.html', {})
 
 def analysis(request):
     	return render(request, 'mainapp/analysis.html', {})
