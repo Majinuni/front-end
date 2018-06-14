@@ -10,6 +10,8 @@ urlpatterns = [
 	url(r'^watermap/$', watermap, name='watermap'),
 	url(r'^reports/$', reports, name='reports'),
 	url(r'^analysis/$', analysis, name='analysis'),
+	url(r'^predictor/$', predictor, name='predictor'),
+
 	
 
 

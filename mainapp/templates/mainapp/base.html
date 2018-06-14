@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+     <link href="{% static 'css/leaflet.css' %}" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
     <link href="{% static 'css/material-dashboard.css' %}" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -55,19 +56,19 @@
 							<ul class="nav">
 								<li>
 									<a href="#">
-										<span class="sidebar-mini"> MP </span>
+										
 										<span class="sidebar-normal"> My Profile </span>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<span class="sidebar-mini"> EP </span>
+										
 										<span class="sidebar-normal"> Edit Profile </span>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<span class="sidebar-mini"> S </span>
+										
 										<span class="sidebar-normal"> Settings </span>
 									</a>
 								</li>
@@ -89,8 +90,22 @@
                         </a>
                     </li>
                     <li>
+<<<<<<< HEAD
 						<a data-toggle="collapse" href="#mapsExamples">
 							<i class="material-icons">image</i>
+||||||| merged common ancestors
+						<a data-toggle="collapse" href="#pagesExamples">
+							<i class="material-icons">image</i>
+=======
+                        <a href="{% url 'predictor' %}">
+                            <i class="material-icons"></i>
+                            <p> Prediction Analysis </p>
+                        </a>
+                    </li>
+                    <li>
+						<a data-toggle="collapse" href="#pagesExamples">
+							
+>>>>>>> c24a4bb0ed7a05469d3f099bb0a390bab07af9e1
 							<p> Water Reservoirs
 								<b class="caret"></b>
 							</p>
@@ -99,14 +114,14 @@
 							<ul class="nav">
 								<li>
 									<a href="{% url 'water' %}">
-										<span class="sidebar-mini"> WT </span>
-										<span class="sidebar-normal"> Water Tabular</span>
+										
+										<span class="sidebar-normal"> Water Reservoir List</span>
 									</a>
 								</li>
 								<li>
 									<a href="{% url 'watermap' %}">
-										<span class="sidebar-mini"> WP </span>
-										<span class="sidebar-normal"> Water Map </span>
+										
+										<span class="sidebar-normal">Water Reservoir Map </span>
 									</a>
 								</li>
 							</ul>
@@ -187,36 +202,13 @@
 
             <footer class="footer">
                 <div class="container-fluid">
-                    <nav class="pull-left">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Company
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Portofolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+
                     <p class="copyright pull-right">
                         &copy;
                         <script>
                             document.write(new Date().getFullYear())
                         </script>
-                        Majinuni Team, 
+                       <span> <b>Majinuni Team. </span>
                     </p>
                 </div>
             </footer>
@@ -243,6 +235,7 @@
 <!--  Notifications Plugin, full documentation here: http://bootstrap-notify.remabledesigns.com/    -->
 <script src="{% static 'js/bootstrap-notify.js' %}"></script>
 <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+<script src="{% static 'js/leaflet.js' %}" ></script>
 <script src="{% static 'js/bootstrap-datetimepicker.js' %}"></script>
 <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
 <script src="{% static 'js/jquery-jvectormap.js' %}"></script>
@@ -322,6 +315,7 @@
         $('.card .material-datatables label').addClass('form-group');
     });
 </script>
+<<<<<<< HEAD
 <script>
     var cupcakeTiles = L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
     maxZoom: 18
@@ -511,4 +505,27 @@
         });
      });
 </script>
+||||||| merged common ancestors
+=======
+
+<script>
+    
+        var cupcakeTiles = L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
+            maxZoom: 18
+          });
+        
+          $.getJSON("http://lyzidiamond.com/cupcakes/cupcakes.json", function(data) {
+            var geojson = L.geoJson(data, {
+              onEachFeature: function (feature, layer) {
+                layer.bindPopup(feature.properties.name);
+              }
+            });
+            var map = L.map('reservoir-map').fitBounds(geojson.getBounds());
+            cupcakeTiles.addTo(map);
+            geojson.addTo(map);
+          });
+
+</script>
+
+>>>>>>> c24a4bb0ed7a05469d3f099bb0a390bab07af9e1
 </html>
