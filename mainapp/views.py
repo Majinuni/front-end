@@ -5,8 +5,8 @@ from django.shortcuts import render
 def home(request):
     	return render(request, 'mainapp/base.html', {})
 
-def dashboard(request):
-    	return render(request, 'mainapp/dashboard.html', {})
+#def dashboard(request):
+    	#return render(request, 'mainapp/dashboard.html', {})
 
 
 def area(request):
@@ -18,7 +18,7 @@ def water(request):
 def watermap(request):
     	return render(request, 'mainapp/watermap.html', {})
 
-def reports(request):
+def dashboard(request):
     	return render(request, 'mainapp/reports.html', {})
 
 def analysis(request):

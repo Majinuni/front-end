@@ -1,0 +1,215 @@
+{  
+   "features":[  
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Kubi Qallo "
+         },
+         "geometery":{  
+            "coordinates":[  
+               2.37205,
+               38.15460000000002
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Jaldesa "
+         },
+         "geometery":{  
+            "coordinates":[  
+               2.21325,
+               38.30033333333333
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"El Warabesa"
+         },
+         "geometery":{  
+            "coordinates":[  
+               3.2546,
+               38.34763333333333
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Shurr"
+         },
+         "geometery":{  
+            "coordinates":[  
+               2.13085,
+               38.27511666666666
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Bubisa "
+         },
+         "geometery":{  
+            "coordinates":[  
+               2.70445,
+               38.09604999999999
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Dosa wachu "
+         },
+         "geometery":{  
+            "coordinates":[  
+               3.186366666666667,
+               38.30066666666667
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Odder Two"
+         },
+         "geometery":{  
+            "coordinates":[  
+               3.48115,
+               39.10275000000001
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Odder  three"
+         },
+         "geometery":{  
+            "coordinates":[  
+               3.47985,
+               39.10221666666666
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Kinisa "
+         },
+         "geometery":{  
+            "coordinates":[  
+               3.444633333333333,
+               39.12313333333333
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Bori "
+         },
+         "geometery":{  
+            "coordinates":[  
+               3.516583333333333,
+               38.98201666666665
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Rawana "
+         },
+         "geometery":{  
+            "coordinates":[  
+               3.334816666666667,
+               38.46663333333333
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"LogoLogo"
+         },
+         "geometery":{  
+            "coordinates":[  
+               1.985466666666667,
+               37.91471666666666
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Laisamis "
+         },
+         "geometery":{  
+            "coordinates":[  
+               1.595733333333333,
+               37.82730000000001
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Ulauli"
+         },
+         "geometery":{  
+            "coordinates":[  
+               1.6206,
+               37.59424999999999
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      },
+      {  
+         "properties":{  
+            "water point type":"Borehole",
+            "name":"Furmarsah"
+         },
+         "geometery":{  
+            "coordinates":[  
+               0.656216666666667,
+               38.05621666666667
+            ],
+            "type":"Point"
+         },
+         "type":"Feature"
+      }
+   ],
+   "type":"FeatureCollection"
+}

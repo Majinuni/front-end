@@ -4,11 +4,11 @@ from .views import *
 
 urlpatterns = [
 	url(r'^home/$', home, name='home'),
-	url(r'^$', dashboard, name='dashboard'),
+	#url(r'^$', dashboard, name='dashboard'),
 	url(r'^area/$', area, name='area'),
 	url(r'^water/$', water, name='water'),
 	url(r'^watermap/$', watermap, name='watermap'),
-	url(r'^reports/$', reports, name='reports'),
+	url(r'^$', dashboard, name='dashboard'),
 	url(r'^analysis/$', analysis, name='analysis'),
 	url(r'^predictor/$', predictor, name='predictor'),
 
