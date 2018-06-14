@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2017-05-14",
+    "boreholes": 919,
+    "dams": 0,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "date": "2017-05-28",
+    "boreholes": 0,
+    "dams": 272,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "date": "2017-06-04",
+    "boreholes": 154,
+    "dams": 0,
+    "rivers": 3473,
+    "rainwater":0
+  },
+  {
+    "date": "2017-06-11",
+    "boreholes": 0,
+    "dams": 307,
+    "rivers": 437,
+    "rainwater":0
+  },
+  {
+    "date": "2017-06-18",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  }
+]

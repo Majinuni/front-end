@@ -17,3 +17,9 @@ def water(request):
 
 def watermap(request):
 	return render(request, 'mainapp/watermap.html', {})
+
+def reports(request):
+	return render(request, 'mainapp/reports.html', {})
+
+def analysis(request):
+	return render(request, 'mainapp/analysis.html', {})
