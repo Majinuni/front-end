@@ -1,34 +1,83 @@
 [
   {
-    "date": "2017-05-14",
+    "months": "January",
     "boreholes": 919,
     "dams": 0,
     "rivers": 0,
     "rainwater":0
   },
   {
-    "date": "2017-05-28",
+    "months": "February",
     "boreholes": 0,
     "dams": 272,
     "rivers": 0,
     "rainwater":0
   },
   {
-    "date": "2017-06-04",
+    "months": "March",
     "boreholes": 154,
     "dams": 0,
     "rivers": 3473,
     "rainwater":0
   },
   {
-    "date": "2017-06-11",
+    "months": "April",
     "boreholes": 0,
     "dams": 307,
     "rivers": 437,
     "rainwater":0
   },
   {
-    "date": "2017-06-18",
+    "months": "May",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "months": "June",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "months": "July",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "months": "August",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "months": "Spetember",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "months": "October",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "months": "November",
+    "boreholes": 0,
+    "dams": 329,
+    "rivers": 0,
+    "rainwater":0
+  },
+  {
+    "months": "December",
     "boreholes": 0,
     "dams": 329,
     "rivers": 0,

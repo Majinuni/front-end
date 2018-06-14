@@ -11,7 +11,9 @@ urlpatterns = [
 	url(r'^$', dashboard, name='dashboard'),
 	url(r'^analysis/$', analysis, name='analysis'),
 	url(r'^predictor/$', predictor, name='predictor'),
-
+	#url(r'ˆdisplay/$', display, name="display"),
+	url(r'^display/$', display, name='display'),
+	
 	
 
 

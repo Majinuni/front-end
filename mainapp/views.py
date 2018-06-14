@@ -1,4 +1,10 @@
 from django.shortcuts import render
+from django.http import JsonResponse
+import json
+
+data = None
+with open("waterPoints.json") as file:
+	data = json.load(file)
 
 
 # Create your views here.
@@ -26,3 +32,6 @@ def analysis(request):
 
 def predictor(request):
     	return render(request, 'mainapp/predictor.html', {})
+
+def display(request):
+    	return JsonResponse(data)

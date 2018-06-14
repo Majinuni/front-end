@@ -130,6 +130,12 @@
                                         <span class="sidebar-normal"> Typography </span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="./components/typography.html">
+                                        <span class="sidebar-mini"> T </span>
+                                        <span class="sidebar-normal"> Water points  </span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -302,19 +308,19 @@
 
 <script>
     var cupcakeTiles = L.tileLayer('http://a.tiles.mapbox.com/v3/lyzidiamond.map-ietb6srb/{z}/{x}/{y}.png', {
-    maxZoom: 18
-    });
+        maxZoom: 18
+      });
     
-    $.getJSON("http://lyzidiamond.com/cupcakes/cupcakes.json", function(data) {
-    var geojson = L.geoJson(data, {
-      onEachFeature: function (feature, layer) {
-        layer.bindPopup(feature.properties.name+'<br>'+feature.properties.address+'<br>'+feature.properties.website);
-      }
-    });
-    var map = L.map('reservoir-map').fitBounds(geojson.getBounds());
-    cupcakeTiles.addTo(map);
-    geojson.addTo(map);
-    });
+      $.getJSON("http://lyzidiamond.com/cupcakes/cupcakes.json", function(data) {
+        var geojson = L.geoJson(data, {
+          onEachFeature: function (feature, layer) {
+            layer.bindPopup(feature.properties.name);
+          }
+        });
+        var map = L.map('reservoir-map').fitBounds(geojson.getBounds()).setView([2.32839, 37.98986], 13);
+        cupcakeTiles.addTo(map);
+        geojson.addTo(map);
+      });
     
     </script>
 <script>
